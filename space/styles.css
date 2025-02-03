@@ -1,0 +1,82 @@
+/* Reset default margins and set base styles */
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    background-color: #0a0a0a;
+    background-image: url(/images/galaxy.webp);
+    background-size: cover;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hero section styling */
+#hero {
+    padding: 4rem 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-logo {
+    max-width: 300px;
+    margin-bottom: 2rem;
+}
+
+#title {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    letter-spacing: 2px;
+}
+
+.underline {
+    border-bottom: 3px solid #00ff9d;
+}
+
+/* Button styling */
+.btn {
+    padding: 1rem 2.5rem;
+    background-color: transparent;
+    border: 2px solid #00ff9d;
+    color: #00ff9d;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 800;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition: transform 0.3s ease;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: rgba(0, 255, 157, 0.1);
+}
+
+/* Footer styling */
+footer h3 {
+    color: #888;
+    font-size: 0.8rem;
+    margin: 2rem 0;
+    font-weight: 400;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #title {
+        font-size: 1.8rem;
+    }
+    
+    #main-logo {
+        max-width: 200px;
+    }
+    
+    .btn {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+}
